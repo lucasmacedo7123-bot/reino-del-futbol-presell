@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Camiseta Deportiva que Está Conquistando a Quien Busca Calidad sin Pagar de Más</title>
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #fdfcf9;
+    color: #2b2b2b;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 0 60px;
+  }
+
+  /* Topo estilo "notícia" */
+  .news-bar {
+    background: #1a1a1a;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding: 8px;
+    letter-spacing: 1px;
+  }
+
+  .header {
+    padding: 30px 24px 10px;
+    text-align: center;
+  }
+
+  .header .tag {
+    display: inline-block;
+    background: #fbeee0;
+    color: #b5651d;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin: 0 0 12px;
+    line-height: 1.3;
+    color: #1a1a1a;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+
+  .meta {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 20px;
+  }
+
+  /* Imagem de destaque */
+  .hero-image {
+    width: 100%;
+    aspect-ratio: 16/10;
+    background: linear-gradient(135deg, #e8ddd0, #d4c4b0);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-image svg {
+    width: 25%;
+    opacity: 0.3;
+  }
+
+  .caption {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #999;
+    font-style: italic;
+    padding: 0 24px;
+  }
+
+  /* Corpo do texto */
+  .article {
+    padding: 30px 24px 0;
+    font-size: 17px;
+  }
+
+  .article p {
+    margin-bottom: 20px;
+  }
+
+  .drop-cap::first-letter {
+    font-size: 52px;
+    font-weight: bold;
+    float: left;
+    line-height: 0.8;
+    margin-right: 8px;
+    margin-top: 6px;
+    color: #b5651d;
+  }
+
+  .highlight-box {
+    background: #fbeee0;
+    border-left: 4px solid #b5651d;
+    padding: 16px 20px;
+    margin: 24px 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  /* Prova social - depoimentos */
+  .social-proof {
+    background: #f5f1ea;
+    padding: 24px;
+    margin: 30px 0;
+    border-radius: 10px;
+  }
+
+  .social-proof-title {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #999;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .testimonial {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .testimonial .stars {
+    color: #f5a623;
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  .testimonial .name {
+    font-weight: bold;
+    font-size: 12px;
+    color: #333;
+    margin-top: 8px;
+    display: block;
+  }
+
+  /* Lista de benefícios */
+  .benefits {
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+  }
+
+  .benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+    font-size: 15px;
+  }
+
+  .benefit-item .check {
+    color: #25D366;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  /* Urgência */
+  .urgency {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #fff4f4;
+    color: #c0392b;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 26px 0 16px;
+  }
+
+  /* CTA */
+  .cta-section {
+    text-align: center;
+    padding: 10px 0 20px;
+  }
+
+  .btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    padding: 20px 36px;
+    border-radius: 50px;
+    box-shadow: 0 6px 18px rgba(37,211,102,0.4);
+    transition: transform 0.2s;
+  }
+
+  .btn-whatsapp:hover {
+    transform: translateY(-2px);
+  }
+
+  .btn-whatsapp svg {
+    width: 26px;
+    height: 26px;
+    fill: white;
+  }
+
+  .cta-subtext {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+  }
+
+  /* Rodapé */
+  .disclaimer {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #bbb;
+    text-align: center;
+    padding: 30px 24px 0;
+    border-top: 1px solid #eee;
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
+
+<div class="news-bar">CONTENIDO PATROCINADO · ARTÍCULO INFORMATIVO</div>
+
+<div class="container">
+
+  <div class="header">
+    <span class="tag">TENDENCIA</span>
+    <h1>La Camiseta Deportiva que Está Conquistando a Quien Busca Calidad sin Pagar de Más</h1>
+    <p class="subtitle">Tejido de primera, corte perfecto y un precio que sorprende a todos</p>
+    <p class="meta">Publicado hoy · Lectura de 3 min</p>
+  </div>
+
+  <div class="hero-image">
+    <svg viewBox="0 0 24 24" fill="#8a7360"><path d="M16 2l-4 2-4-2-6 4 2 4 2-1v11h12V9l2 1 2-4-6-4zm-4 3l1.5-1 1.5 1-3 1.5L9 5l1.5-1L12 5z"/></svg>
+  </div>
+  <p class="caption">Ilustración meramente representativa</p>
+
+  <div class="cta-section" style="padding-top: 20px;">
+    <a class="btn-whatsapp" href="https://reinodelfutbol.com/collections/espana" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33C8.51 21.5 10.2 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+      Ver más
+    </a>
+    <p class="cta-subtext">Atención rápida · Resuelve tus dudas sin compromiso</p>
+  </div>
+
+  <div class="article">
+    <p class="drop-cap">Hay algo que está llamando la atención de quien practica deporte, entrena o simplemente le gusta vestirse cómodo: una camiseta deportiva con tejido de calidad, corte perfecto y un precio que sorprende a todos.</p>
+
+    <p>Es de esas piezas que sirven para todo: para entrenar, para salir con amigos, para el día a día. Cómoda desde el primer uso, respira bien y aguanta el ritmo de quien no para quieto — y quien ya la probó lo confirma: la diferencia se siente ya en el primer toque, y sigue ahí después de varios lavados, sin destiñir y sin perder la forma.</p>
+
+    <div class="highlight-box">
+      "La compré pensando que era una camiseta más. Hoy es la que más uso, tanto para entrenar como para el día a día."
+    </div>
+
+    <p>El secreto está en cortar al intermediario: tejido de primera, producción cuidada y venta directa — sin el precio inflado de las tiendas.</p>
+
+    <div class="benefits">
+      <div class="benefit-item">
+        <span class="check">✔</span>
+        <span>Tejido de alta calidad, suave, transpirable y resistente</span>
+      </div>
+      <div class="benefit-item">
+        <span class="check">✔</span>
+        <span>Corte cómodo, ideal para entrenar o para el día a día</span>
+      </div>
+      <div class="benefit-item">
+        <span class="check">✔</span>
+        <span>Precio muy por debajo del que ves en tienda</span>
+      </div>
+      <div class="benefit-item">
+        <span class="check">✔</span>
+        <span>Atención directa y personalizada</span>
+      </div>
+    </div>
+
+    <div class="social-proof">
+      <div class="social-proof-title">Lo que dice la gente</div>
+
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        El tejido es mucho mejor que el de camisetas de tienda cara. Y el precio ni se compara.
+        <span class="name">— Rafael M.</span>
+      </div>
+
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        Ya compré 4 camisetas. Corte perfecto y no destiñe después de lavar.
+        <span class="name">— Diego A.</span>
+      </div>
+
+      <div class="testimonial">
+        <div class="stars">★★★★☆</div>
+        La atención fue súper rápida, resolvieron todas mis dudas de talla.
+        <span class="name">— Camila T.</span>
+      </div>
+    </div>
+
+    <p>Si también quieres conocer el tejido, los colores disponibles y las tallas, el siguiente paso es simple: haz clic para ver más.</p>
+
+    <div class="urgency">
+      ⚠️ Stock limitado en las tallas más buscadas
+    </div>
+
+    <div class="cta-section">
+      <a class="btn-whatsapp" href="https://reinodelfutbol.com/collections/espana" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33C8.51 21.5 10.2 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+        Ver más
+      </a>
+      <p class="cta-subtext">Atención rápida · Resuelve tus dudas sin compromiso</p>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    Este es un contenido publicitario. Los resultados pueden variar de una persona a otra.
+  </div>
+
+</div>
+
+</body>
+</html>
